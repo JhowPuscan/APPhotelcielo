@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+    <!-- Tarjeta de login -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLogin"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Contenido dentro de la tarjeta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Título del login -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Login title"
+                android:text="INICIAR SESIÓN"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <!-- Espacio entre el título y los campos -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <!-- Campo de texto para el correo electrónico -->
+            <EditText
+                android:id="@+id/etCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Email input"
+                android:hint="Correo"
+                android:inputType="textEmailAddress" />
+
+            <!-- Campo de texto para la contraseña -->
+            <EditText
+                android:id="@+id/etContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Password input"
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
+
+            <!-- Botón para iniciar sesión -->
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="Login button"
+                android:text="Ingresar"
+                app:cornerRadius="50dp" />
+
+            <!-- Botón para crear cuenta -->
+            <Button
+                android:id="@+id/btnCrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#203B8B"
+                android:contentDescription="Register button"
+                android:text="Registrarme"
+                android:textSize="12sp"
+                app:cornerRadius="50dp" />
+
+            <!-- Botón para iniciar sesión como visitante -->
+            <Button
+                android:id="@+id/btnAnonymous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#008989"
+                android:contentDescription="Guest login button"
+                android:text="Visitante"
+                android:textSize="12sp"
+                app:cornerRadius="50dp" />
+
+            <!-- Botón para iniciar sesión con Google -->
+            <Button
+                android:id="@+id/btnIniciarSesionGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFC107"
+                android:contentDescription="Google login button"
+                android:text="Iniciar sesión con Google"
+                android:textSize="12sp"
+                app:cornerRadius="50dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout
+        android:id="@+id/contenedorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone" /> <!-- Initially set to gone -->
+</androidx.constraintlayout.widget.ConstraintLayout>

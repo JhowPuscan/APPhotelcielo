@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Título del registro -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:contentDescription="Register title" />
+
+        <!-- Campo de texto para ingresar el nombre -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre y apellido"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:contentDescription="Name input" />
+
+        <!-- Campo de texto para ingresar el correo electrónico -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo electrónico" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:contentDescription="Email input" />
+
+        <!-- Campo de texto para ingresar la contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña" />
+
+        <EditText
+            android:id="@+id/etContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Debe tener al menos 6 caracteres"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:contentDescription="Password input" />
+
+        <!-- Campo de texto para confirmar la contraseña -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar contraseña" />
+
+        <EditText
+            android:id="@+id/etConfirmContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vuelve a escribir la contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:contentDescription="Confirm password input" />
+
+        <!-- Botón para crear una cuenta -->
+        <Button
+            android:id="@+id/btnCrearCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:contentDescription="Create account button" />
+
+        <!-- Botón para iniciar sesión con Google -->
+        <Button
+            android:id="@+id/btnIniciarSesionGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión con Google"
+            android:backgroundTint="#FFC107"
+            android:contentDescription="Google sign-in button" />
+
+        <!-- Términos y condiciones -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Al crear una cuenta, aceptas las Condiciones de Uso, el Aviso de Privacidad, y las Condiciones de Cookies y Publicidad en Internet." />
+
+        <!-- Botón para redirigir a la pantalla de inicio de sesión -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes una cuenta? Iniciar sesión"
+            android:textColor="@android:color/holo_blue_dark"
+            android:contentDescription="Login redirect button"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

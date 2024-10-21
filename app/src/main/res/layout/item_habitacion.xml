@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <!-- Puedes definir variables aquí si usas Data Binding -->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ImageView para mostrar la imagen de la habitación -->
+        <ImageView
+            android:id="@+id/imageViewHabitacion"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/deluxe" /> <!-- Reemplaza con tu imagen -->
+
+        <TextView
+            android:id="@+id/textViewNumeroHabitacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habitación: x"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría: x"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/textViewCapacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capacidad: x"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/textViewPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio por Noche: S/x"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/textViewDisponibilidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disponible"
+            android:textSize="14sp"
+            android:textColor="@color/green"/>
+
+        <Button
+            android:id="@+id/buttonReservar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservar"/>
+    </LinearLayout>
+</layout>
