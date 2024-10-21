@@ -55,7 +55,7 @@ public class BuscarHabitacionesFragment extends Fragment {
     private Calendar checkOutDate;
 
     // URL del script PHP en tu servidor
-    private static final String URL_BUSCAR_HABITACIONES = "http://192.168.18.119:80/hotel/buscar_habitaciones.php";
+    private static final String URL_BUSCAR_HABITACIONES = "http://192.168.56.1:80/hotel/buscar_habitaciones.php";
 
     // RequestQueue de Volley
     private RequestQueue requestQueue;

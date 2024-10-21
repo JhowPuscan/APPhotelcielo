@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private GoogleSignInClient googleSignInClient;
     private static final int RC_SIGN_IN = 9001;
-    private static final String SERVER_URL = "http://192.168.18.119:80/hotel/registro.php";
+    private static final String SERVER_URL = "http://192.168.56.1:80/hotel/registro.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

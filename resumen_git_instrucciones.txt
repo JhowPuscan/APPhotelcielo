@@ -1,0 +1,71 @@
+
+1. Configuración inicial de Git (solo una vez):
+-----------------------------------------------
+- Configurar nombre y correo en Git:
+    git config --global user.name "Tu Nombre"
+    git config --global user.email "tuemail@example.com"
+
+- Manejo de finales de línea en Windows:
+    git config --global core.autocrlf true
+
+
+2. Subir un proyecto a GitHub:
+------------------------------
+1. Inicializar el repositorio:
+    git init
+
+2. Agregar archivos al área de preparación:
+    git add .
+
+3. Hacer un commit:
+    git commit -m "Descripción de los cambios"
+
+4. Agregar el repositorio remoto:
+    git remote add origin https://github.com/JhowPuscan/AppHotelCielo.git
+
+5. Cambiar el nombre de la rama principal a 'main':
+    git branch -M main
+
+6. Subir el proyecto a GitHub:
+    git push -u origin main
+
+
+3. Colaborar en el proyecto desde otra computadora:
+--------------------------------------------------
+1. Clonar el repositorio:
+   a) Configura tu nombre y correo en la nueva máquina:
+      git config user.name "DesingvirtualTP"
+      git config user.email "dpyasociadosengeneral@gmail.com"
+
+   b) Generar una clave SSH:
+      ssh-keygen -t ed25519 -C "dpyasociadosengeneral@gmail.com"
+      cat ~/.ssh/id_ed25519.pub
+      (Agregar la clave en: https://github.com/settings/keys)
+
+   c) Clonar el repositorio:
+      git clone git@github.com:JhowPuscan/APPhotelcielo.git
+      cd APPhotelcielo
+      pwd  # Verificar la ubicación del proyecto clonado para Abrir con Android estudio agregar cambios 
+
+2. Verificar el estado del repositorio:
+    git status
+
+3. Guardar cambios:
+    git add .
+    git commit -m "Descripción de los cambios"
+
+4. Obtener los últimos cambios del repositorio remoto:
+    git pull origin main
+
+5. Subir tus cambios:
+    git push origin main
+
+
+Consejos adicionales:
+---------------------
+- Crear una nueva rama para desarrollar nuevas funcionalidades:
+    git checkout -b nombre-de-tu-rama
+
+- Sincronizar frecuentemente con git pull para evitar conflictos.
+
+- Resolver conflictos y luego agregar los cambios y hacer un commit.
