@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "750249118840",
+    "project_id": "hotelcielo-2500c",
+    "storage_bucket": "hotelcielo-2500c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750249118840:android:91ade39130da7b20ddf18d",
+        "android_client_info": {
+          "package_name": "com.example.hotelcielo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2opk5A2ku4yfbjhTrJdsT-rOgtTZ1S70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

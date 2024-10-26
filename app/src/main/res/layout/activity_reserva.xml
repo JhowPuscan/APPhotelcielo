@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextFechaEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de entrada" />
+
+    <EditText
+        android:id="@+id/editTextFechaSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de salida" />
+
+    <EditText
+        android:id="@+id/editTextNoches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de noches" />
+
+    <EditText
+        android:id="@+id/editTextAdultos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de adultos" />
+
+    <EditText
+        android:id="@+id/editTextNinos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de niños" />
+
+    <Button
+        android:id="@+id/buttonReservar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar" />
+
+</LinearLayout>
